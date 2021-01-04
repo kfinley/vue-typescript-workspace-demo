@@ -1,8 +1,9 @@
 /**
- * Returns a random emoji.
+ * Generate random emoji.
  */
 function emoji() {
-  return ['🎨', '💰', '🎩', '🎒', '🧿'][Math.floor(Math.random() * 5)];
+  const emojis = ['🎨', '💰', '🎩', '🎒', '🧿', '👍 '];
+  return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
 export default emoji;

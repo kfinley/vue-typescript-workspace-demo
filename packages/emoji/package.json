@@ -3,6 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "emoji-generator": "1.0.0"
+    "emoji-generator": "^1.0.0"
   }
 }

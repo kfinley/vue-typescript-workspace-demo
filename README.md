@@ -1,34 +1,16 @@
-# newvue
+# NPM Workspaces with Vue + TypeScript + Referenced Modules with Client not at root
 
-## Project setup
+## Structure
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
+Project Root
+├── client (Vue client)
+|   ├── package.json { "workspaces": ["../packages/*"], "dependencies": {"emoji": "^1.0.0"}}
+|   └── node_modules
+|       ├── emoji -> (symlink) ../packages/emoji
+|       └── emoji-generator -> (symlink) ../packages/emoji-generator
+└── packages
+    ├── emoji
+    |   └── package.json {"dependencies": {"emoji-generator": "^1.0.0"}}
+    └── emoji-generator
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
