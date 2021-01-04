@@ -16,3 +16,11 @@ Project Root
 
 ## Info
 This is a boilerplate demo Vue project using workspaces and referenced modules. The Vue client project is located in a subdirectory of the root folder. Additional client projects could be added at the root level using the same setup for referencing packages. This setup allows reuse of projects as modules without the need to package / publish / install referenced projects.
+
+## Setup & Run
+
+1. `cd client`
+
+2. `npm install`
+
+3. `npm run serve`
