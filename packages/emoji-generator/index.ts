@@ -1,8 +1,10 @@
+import emojis from 'emojis-list';
+
 /**
  * Generate random emoji.
  */
 function emoji() {
-  const emojis = ['🎨', '💰', '🎩', '🎒', '🧿', '👍 '];
+  // const emojis = ['🎨', '💰', '🎩', '🎒', '🧿', '👍 '];
   return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
